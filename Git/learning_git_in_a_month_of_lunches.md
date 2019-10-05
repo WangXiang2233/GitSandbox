@@ -59,8 +59,9 @@ checkout
 # git branch
 ブランチ操作
 
-git branch
+git branch 
 git branch -v # version SHA1を表示する
+git branch feature # featureというブランチを作る
 
 
 # git commit
@@ -75,6 +76,25 @@ git commit --amend -m "change commit message of last commit ..."
 git diff # 作業エリア vs ステージングエリア
 git diff --staged # ステージングエリア vs リポジトリ
 
+# git push
+ローカルからリモートにプッシュする
+
+
+git push -u origin feature1 # リモート：origin / ローカル：feature1 
+git push # 現在のブランチと同名のブランチがリモートに既に存在する場合に使う
+
+# git pull
+リモートからローカルへプルする
+
+git pull
+
+# git stash
+他ブランチをマージする前に、作業エリアとステージングエリアにある編集中のファイルを一時退避
+
+git stash
+git stash list
+git stash pop
+
 # UI tool
 UI ツールを開く
 
@@ -84,4 +104,5 @@ gitk # git log に対応する画面
 
 GUI で全ブランチを表示する
 gitk -> (MENU) View -> New View -> All (local) branches -> Remember this view
+
 
