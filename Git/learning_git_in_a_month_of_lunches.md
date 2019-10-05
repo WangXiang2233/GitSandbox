@@ -95,6 +95,9 @@ git stash
 git stash list
 git stash pop
 
+# git diff
+git diff master...feature
+
 # UI tool
 UI ƒc[ƒ‹‚ğŠJ‚­
 
