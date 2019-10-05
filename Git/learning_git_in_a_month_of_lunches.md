@@ -96,13 +96,15 @@ git stash list
 git stash pop
 
 # UI tool
-UI ツールを開く
-
+## UI ツールを開く
 git citool
 git gui
 gitk # git log に対応する画面
 
-GUI で全ブランチを表示する
+## GUI で全ブランチを表示する
 gitk -> (MENU) View -> New View -> All (local) branches -> Remember this view
 
+## Mergetool
+
+git mergetool
 
