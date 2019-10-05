@@ -95,8 +95,14 @@ git stash
 git stash list
 git stash pop
 
+# git log
+
+git log --graph --decorate --pretty=oneline --all --abbrev-commit
+
 # git diff
+
 git diff master...feature
+git diff --name-status master...feature # ファイル名だけを表示
 
 # UI tool
 UI ツールを開く
