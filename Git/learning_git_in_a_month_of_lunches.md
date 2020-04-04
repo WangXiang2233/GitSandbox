@@ -81,12 +81,20 @@ git diff --staged # ステージングエリア vs リポジトリ
 
 
 git push -u origin feature1 # リモート：origin / ローカル：feature1 
+git push origin feature1 # ??? -u ???
 git push # 現在のブランチと同名のブランチがリモートに既に存在する場合に使う
 
 # git pull
 リモートからローカルへプルする
 
 git pull
+
+# git remote
+リモートリポジトリを表示
+
+git remote -v show
+git remote -v show origin
+
 
 # git stash
 他ブランチをマージする前に、作業エリアとステージングエリアにある編集中のファイルを一時退避
@@ -105,6 +113,7 @@ git diff master...feature
 git diff --name-status master...feature # ファイル名だけを表示
 
 # UI tool
+
 ## UI ツールを開く
 git citool
 git gui
